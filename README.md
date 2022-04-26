@@ -11,7 +11,7 @@ This repo is re-written in Traditional Chinese (zh-TW) by [DragonChen](https://g
 *Update Date: 2022/04/26*
 
 [Parent Repository](https://github.com/streamlit/30days): 25 / 30  
-Translated Days: 5 / 30
+Translated Days: 5 / 25
 
 ## 如何參與
 
@@ -19,7 +19,7 @@ Translated Days: 5 / 30
 
 Streamlit 的 [Twitter](https://twitter.com/streamlit) 和 [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) 以及 [`#30DaysOfStreamlit` 應用程式](https://share.streamlit.io/streamlit/30days/) 每天都會發布一項新挑戰
 
-[![30 Days Of Streamlit（繁體中文版）](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dragonchen-tw/30days-zh_tw)
+或也可以直接在 Streamlit Cloud 上瀏覽 [![30 Days Of Streamlit（繁體中文版）](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dragonchen-tw/30days-zh_tw)
 
 完成每日挑戰，在 [Twitter](https://twitter.com/streamlit) 或 [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) 上和我們分享您的解法，並獲得酷炫的 Streamlit 神秘獎勵！ 😎
 
