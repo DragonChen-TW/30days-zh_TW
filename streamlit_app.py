@@ -24,6 +24,8 @@ query_params = st.experimental_get_query_params()
 if query_params and query_params["challenge"][0] in days_list:
     st.session_state.day = query_params["challenge"][0]
 
+st.write('中文翻譯進度：5 / 25（2022/04/26 更新）')
+
 selected_day = st.selectbox('開始挑戰 👇', days_list, key="day", on_change=update_params)
 
 with st.expander("有關 #30DaysOfStreamlit"):
