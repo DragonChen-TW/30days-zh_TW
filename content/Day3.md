@@ -1,25 +1,25 @@
-# st.button
+# `st.button`
 
-`st.button` allows the display of a button widget.
+`st.button` 可以顯示一個按鈕部件。
 
-## What we're building?
+## 我們正在建立什麼？
 
-A simple app that performs conditionally prints out alternative messages depending on whether the button was pressed or not.
+一個簡單的應用程式，能按照不同條件印出不同的訊息，根據按鈕有無被按下
 
-Flow of the app:
+程式的流程：
 
-1. By default, the app prints `Goodbye`
-2. Upon clicking on the button, the app displays the alternative message `Why hello there`
+1. 預設狀況下，程式印出 `Goodbye`
+2. 點擊按鈕後，程式顯示第二則訊息 `Why hello there`
 
-## Demo app
+## Demo 應用程式
 
-The deployed Streamlit app should look something like the one shown in the below link:
+部署的 Streamlit 應用程式應該類似下面這個連結的應用程式：
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.button/)
 
-## Code
+## 程式碼
 
-Here's the code to implement the above mentioned app:
+這裡是實現上述應用程式的程式碼：
 
 ```python
 import streamlit as st
@@ -32,21 +32,21 @@ else:
      st.write('Goodbye')
 ```
 
-## Line-by-line explanation
+## 逐行解釋
 
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+建立 Streamlit 應用程式時，第一件事情是載入 `streamlit` 套件為 `st`：
 
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+接著建立 header 的文字：
 
 ```python
 st.header('st.button')
 ```
 
-Next, we will use conditional statements `if` and `else` for printing alternative messages.
+然後，我們使用條件判斷式 `if` 和 `else` 來印出第二則訊息
 
 ```python
 if st.button('Say hello'):
@@ -55,33 +55,32 @@ else:
      st.write('Goodbye')
 ```
 
-As we can see from the above code box, the `st.button()` command accepts the `label` input argument of `Say hello`, which is the text that the button displays.
+從上面程式碼中我們可以看到，`st.button()` 指令可以接收 `label` 輸入參數，為 `Say hello`，也就是按鈕上面顯示的文字
 
-The `st.write` command is used to print text messages of either `Why hello there` or `Goodbye` depending on whether the button was clicked or not, which is implemented via:
-
+`st.write` 指令則是用來印出文字訊息 `Why hello there` 或 `Goodbye`，根據按鈕是否被點擊，透過以下方式實現：
 
 ```python
 st.write('Why hello there')
 ```
 
-and
+和
 
 ```python
 st.write('Goodbye')
 ```
 
-It is important to note that the above `st.write` statements are placed under the `if` and `else` conditions in order to perform the above mentioned process of alternative displaying of messages
+需要注意的是，上述 `st.write` 要背被放在 `if` 和 `else` 中，用來執行上面訊息顯示的過程
 
-## Next steps
+## 下一步
 
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud) as will be explained soon in an upcoming challenge.
+現在你已經在本地建立了 Streamlit 應用程式，是時候來部署到 [Streamlit Cloud](https://streamlit.io/cloud)，很快地，後面的挑戰就會提到
 
-Because this is the first week of your challenge, we provide the full code (as shown in the code box above) and solution (the demo app) right inside this webpage.
+因為這是你第一周的挑戰，我們在網頁內提供了完整的程式碼（像是上面 code block）還有解法（demo 應用程式）
 
-Moving forward in the next challenges, it is recommended that you first try implementing the Streamlit app yourself.
+在接下來的挑戰中，建議你先試著自己實現 Streamlit 應用程式
 
-Don't worry if you get stuck, you can always take a peek at the solution.
+如果你卡住了，別擔心～你可以隨時偷看解法
 
-## References
+## 參考資料
 
-Read about [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button) in the Streamlit API Documentation.
+閱讀 Streamlit API 文件中的 [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button)

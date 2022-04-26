@@ -1,29 +1,28 @@
-# st.write
+# `st.write`
 
-`st.write` allows writing text and arguments to the Streamlit app.
+`st.write` 允許把文字和參數寫入到 Streamlit 應用程式
 
-In addition to being able to display text, the following can also be displayed via the `st.write()` command:
+除了能顯示文字外，還可以使用 `st.write()` 指令顯示下面內容：
 
+- 印出字串，像 `st.markdown()` 一樣
+- 顯示 Python `dict`
+- `pandas` 的 DataFrame 可以顯示像是 table 一樣
+- 圖表從 `matplotlib`、`plotly`、`altair`、`graphviz`、`bokeh`
+- 更多東西（看看 [`st.write` on API 文件](https://docs.streamlit.io/library/api-reference/write-magic/st.write)）
 
-- Prints strings; works like `st.markdown()`
-- Displays a Python `dict`
-- Displays `pandas` DataFrame can be displayed as a table
-- Plots/graphs/figures from `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
-- And more (see [st.write on API docs](https://docs.streamlit.io/library/api-reference/write-magic/st.write))
+## 我們正在建立什麼？
 
-## What we're building?
+一個簡單的應用程式顯示怎麼使用 `st.write()` 的多種方式：文字、數字、DataFrame 和 圖表
 
-A simple app showing the various ways on how to use the `st.write()` command for displaying text, numbers, DataFrames and plots.
+## Demo 應用程式
 
-## Demo app
-
-The deployed Streamlit app should look something like the one shown in the below link:
+部署的 Streamlit 應用程式應該類似下面這個連結的應用程式：
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
 
-## Code
+## 程式碼
 
-Here's how to use st.write:
+這裡是如何使用 `st.write`：
 
 ```python
 import numpy as np
@@ -63,36 +62,37 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 ```
 
-## Line-by-line explanation
+## 逐行解釋
 
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+
+建立 Streamlit 應用程式時，第一件事情是載入 `streamlit` 套件為 `st`：
 
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+接著建立 header 的文字：
 
 ```python
 st.header('st.write')
 ```
 
 **Example 1**
-Its basic use case is to display text and Markdown-formatted text:
+最基礎的用法是顯示**純文字**和使用 **Markdown 語法** 的格式化文字：
 
 ```python
 st.write('Hello, *World!* :sunglasses:')
 ```
 
 **Example 2**
-As mentioned above, it can also be used to display other data formats such as numbers:
+上面有提到，也可以永來顯示其他資料格式，例如數字：
 
 ```python
 st.write(1234)
 ```
 
 **Example 3**
-DataFrames can also be displayed as follows:
+DataFrames 也可以被顯示出來：
 
 ```python
 df = pd.DataFrame({
@@ -103,14 +103,14 @@ st.write(df)
 ```
 
 **Example 4**
-You can pass in multiple arguments:
+你可以傳多個參數進去：
 
 ```python
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 ```
 
 **Example 5**
-Finally, you can also display plots as well by passing it to a variable as follows:
+最後，你也可以透過傳參數的方式顯示圖表：
 
 ```python
 df2 = pd.DataFrame(
@@ -121,25 +121,19 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 ```
 
-## Demo app
+## 下一步
 
-The deployed Streamlit app should look something like the one shown in the below link:
+現在你已經在本地建立了 Streamlit 應用程式，是時候來部署到 [Streamlit Cloud](https://streamlit.io/cloud)，很快地，後面的挑戰就會提到
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
+因為這是你第一周的挑戰，我們在網頁內提供了完整的程式碼（像是上面 code block）還有解法（demo 應用程式）
 
-## Next steps
+在接下來的挑戰中，建議你先試著自己實現 Streamlit 應用程式
 
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud) as will be explained soon in an upcoming challenge.
+如果你卡住了，別擔心～你可以隨時偷看解法
 
-Because this is the first week of your challenge, we provide the full code (as shown in the code box above) and solution (the demo app) right inside this webpage.
+## 後續閱讀
 
-Moving forward in the next challenges, it is recommended that you first try implementing the Streamlit app yourself.
-
-Don't worry if you get stuck, you can always take a peek at the solution.
-
-## Further reading
-
-In addition to [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write), you can explore the other ways of displaying text:
+除了 [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write)，你可以探索其他顯示文字的方式：
 
 - [`st.markdown`](https://docs.streamlit.io/library/api-reference/text/st.markdown)
 - [`st.header`](https://docs.streamlit.io/library/api-reference/text/st.header)
