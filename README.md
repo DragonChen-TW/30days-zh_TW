@@ -8,10 +8,10 @@ This repo is re-written in Traditional Chinese (zh-TW) by [DragonChen](https://g
 
 ## 翻譯進度
 
-*Update Date: 2022/04/26*
+*Update Date: 2022/05/02*
 
-[Parent Repository](https://github.com/streamlit/30days): 25 / 30  
-Translated Days: 5 / 25
+[Parent Repository](https://github.com/streamlit/30days): 30 /30  
+Translated Days: 7 / 30
 
 ## 如何參與
 
