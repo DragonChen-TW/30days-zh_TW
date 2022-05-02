@@ -31,5 +31,3 @@ Git 是一個能不停追蹤對程式碼所有改動的軟體（也就是版本�
 這會帶你進入一個新網頁，中間框框會說「***Drag files here to add them to your repository***」和「**choose your files**」。你可以拖曳檔案進去框框內或是點擊 **Choose your files** 來從本地的電腦選擇檔案
 
 點擊 **Commit changes** 來進到下一步（*Figure 6*）
-
-Click on **Commit changes** to proceed further (Figure 6).

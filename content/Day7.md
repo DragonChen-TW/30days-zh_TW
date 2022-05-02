@@ -1,18 +1,18 @@
-# Deploying your Streamlit app with Streamlit Cloud
+# 部署 Streamlit 應用程式到 Streamlit Cloud
 
 ## Streamlit Cloud
 
-[Streamlit Cloud](https://streamlit.io/cloud) is a hosting service for easily deploying Streamlit apps.
+[Streamlit Cloud](https://streamlit.io/cloud) 是一個幫你託管的服務，可以很方便地部署 Streamlit 程式
 
-## Sign up for Streamlit Cloud
+## 註冊 Streamlit Cloud
 
-You can easily sign up for [Streamlit Cloud](https://streamlit.io/cloud) by simply logging in with Google or GitHub account.
+你可以用 Google 或 GitHub 輕鬆註冊 [Streamlit Cloud](https://streamlit.io/cloud)
 
-## Deploy a Streamlit app
+## 部署一個 Streamlit 應用程式
 
-To deploy a Streamlit app, do the following:
-1. Sign in with GitHub or Gmail credentials
-2. Pick a repo, branch and file
-3. Click Deploy
+如果想要部署 Streamlit：
+1. 用 Google 或 GitHub 登入
+2. 挑選一個 repo, branch 或 file
+3. 點擊「Deploy」
 
-Then any time you do a git push your app will update immediately.
+每次你 git push 的時候，你的應用程式也會立即更新
