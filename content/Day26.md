@@ -13,12 +13,16 @@ Here's how to implement the Bored-API app:
 ```python
 import streamlit as st
 import requests
+
 st.title('🏀 Bored API app')
+
 st.sidebar.header('Input')
 selected_type = st.sidebar.selectbox('Select an activity type', ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"])
+
 suggested_activity_url = f'http://www.boredapi.com/api/activity?type={selected_type}'
 json_data = requests.get(suggested_activity_url)
 suggested_activity = json_data.json()
+
 c1, c2 = st.columns(2)
 with c1:
   with st.expander('About this app'):

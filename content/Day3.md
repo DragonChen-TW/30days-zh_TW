@@ -73,7 +73,7 @@ st.write('Goodbye')
 
 ## 下一步
 
-現在你已經在本地建立了 Streamlit 應用程式，是時候來部署到 [Streamlit Cloud](https://streamlit.io/cloud)，很快地，後面的挑戰就會提到
+現在你已經在本地建立了 Streamlit 應用程式，是時候部署到 [Streamlit Community Cloud](https://streamlit.io/cloud)，後面的挑戰很快就會解釋這是什麼
 
 因為這是你第一周的挑戰，我們在網頁內提供了完整的程式碼（像是上面 code block）還有解法（demo 應用程式）
 
