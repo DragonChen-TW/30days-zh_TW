@@ -1,12 +1,12 @@
-# 部署 Streamlit 應用程式到 Streamlit Cloud
+# 部署 Streamlit 應用程式到 Streamlit Community Cloud
 
-## Streamlit Cloud
+## Streamlit Community Cloud
 
-[Streamlit Cloud](https://streamlit.io/cloud) 是一個幫你託管的服務，可以很方便地部署 Streamlit 程式
+[Streamlit Community Cloud](https://streamlit.io/cloud) 是一個託管服務，讓你可以方便地部署 Streamlit 程式
 
-## 註冊 Streamlit Cloud
+## 註冊 Streamlit Community Cloud
 
-你可以用 Google 或 GitHub 輕鬆註冊 [Streamlit Cloud](https://streamlit.io/cloud)
+你可以用 Google 或 GitHub 輕鬆註冊 [Streamlit Community Cloud](https://streamlit.io/cloud)
 
 ## 部署一個 Streamlit 應用程式
 
